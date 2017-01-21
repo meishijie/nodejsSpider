@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  h1= title
+  p #{inputTitle}
+
+  form(
+    name="form1"
+    method="get"
+    action="users/?q="
+  )
+    input(
+      name = 'boardId'
+      id = 'boardId'
+      type="text"
+    )
+    input(
+      name="提交"
+      type="submit"
+      value="提交"
+
+    )
+
+
